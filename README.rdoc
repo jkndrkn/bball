@@ -1,4 +1,4 @@
-== Dev Setup
+= Dev Setup
 
   # Ensure ruby 2.0.0 is available to this project
 
@@ -10,19 +10,19 @@
 
   # Browse to http://localhost:3000
 
-== Assumptions
+= Assumptions
 
 1. If a player lacks an entry for a particular statistic,
    such as hits, the value of that statistic is set to zero.
 2. If deriving a statistic requires division by zero,
    the value of that derived statistic is nil.
 
-== TODO
+= TODO
 
 1. Add support for dataTables UI images (sort arrows, etc.).
 2. Add tests.
 
-== Statistics Formulas
+= Statistics Formulas
 
 Source: Wikipedia
 
@@ -39,17 +39,17 @@ Source: Wikipedia
   total_bases = 1 * (hits) + 2 * (doubles) + 3 * (triples) + 4 * (home_runs)
   on_base_percentage = (hits + walks + hit_by_pitch) / (at_bats + walks + sacrifice_hits + hit_by_pitch)
 
-== Time to Completion
+= Time to Completion
 
-= Coding
+== Coding
 
-  Total: 3 hours 20 minutes
+  3 hours 20 minutes
 
-= Packaging deliverables and deploying
+== Packaging deliverables and deploying
 
-  Total: 1 hour 45 minutes (mostly learning how to use heroku and postgresql)
+  1 hour 45 minutes (mostly learning how to use heroku and postgresql)
   
-= Total
+== Total
   
   5 hours 5 minutes 
 
