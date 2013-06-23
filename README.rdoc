@@ -26,28 +26,31 @@
 
 Source: Wikipedia
 
-AVG: batting_average
-HR: home_runs
-SB: steals
-RBI: rbi
-RUNS: runs
-OPS: on_base_plus_slugging
-
-batting_average = hits / at_bats
-on_base_plus_slugging = on_base_percentage + slugging_average
-slugging_average = total_bases / at_bats
-total_bases = 1 * (hits) + 2 * (doubles) + 3 * (triples) + 4 * (home_runs)
-on_base_percentage = (hits + walks + hit_by_pitch) / (at_bats + walks + sacrifice_hits + hit_by_pitch)
+  AVG: batting_average
+  HR: home_runs
+  SB: steals
+  RBI: rbi
+  RUNS: runs
+  OPS: on_base_plus_slugging
+   
+  batting_average = hits / at_bats
+  on_base_plus_slugging = on_base_percentage + slugging_average
+  slugging_average = total_bases / at_bats
+  total_bases = 1 * (hits) + 2 * (doubles) + 3 * (triples) + 4 * (home_runs)
+  on_base_percentage = (hits + walks + hit_by_pitch) / (at_bats + walks + sacrifice_hits + hit_by_pitch)
 
 == Time to Completion
 
 = Coding
 
-* 50 minutes
-* 45 minutes from 3:15pm to 4pm
-* 105 minutes from 4pm to 4:45pm
+  Total: 3 hours 20 minutes
 
 = Packaging deliverables and deploying
 
-* 4:45 pm to 6:00pm
-* 12 pm to ???
+  Total: 1 hour 45 minutes (mostly learning how to use heroku and postgresql)
+  
+= Total
+  
+  5 hours 5 minutes 
+
+
