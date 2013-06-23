@@ -1,10 +1,13 @@
 == Initialize
 
+  # Ensure ruby 2.0.0 is available to this project
+
   bundle install
   cd ./bin
-  ./import-player-statistics ../data/1998statistics.xml 
+  ./import-player-statistics ../data/1998statistics.xml
   cd ../
   bundle exec rails server
+
   # Browse to http://localhost:3000
 
 == Assumptions
@@ -42,4 +45,5 @@ on_base_percentage = (hits + walks + hit_by_pitch) / (at_bats + walks + sacrific
 
 = Packaging deliverables and deploying
 
-* 4:45 pm to ???
+* 4:45 pm to 6:00pm
+* 12 pm to ???
