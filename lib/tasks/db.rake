@@ -23,8 +23,10 @@ namespace :db do
     "HIT_BY_PITCH" => "hit_by_pitch",
   }
 
+  SEED_SOURCE_PATH = "data/1998statistics.xml"
+
   task :seed => [:environment] do
-    source_path = File.join(Rails.root, "data/1998statistics.xml")
+    source_path = File.join(Rails.root, SEED_SOURCE_PATH)
     source = Nokogiri::XML(File.read(source_path))
 
     year = source.xpath("//YEAR").text
