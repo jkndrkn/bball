@@ -1,19 +1,21 @@
-== Initialize
+== Dev Setup
 
   # Ensure ruby 2.0.0 is available to this project
 
   bundle install
-  cd ./bin
-  ./import-player-statistics ../data/1998statistics.xml
-  cd ../
+  be rake db:create
+  be rake db:migrate
+  be rake db:seed
   bundle exec rails server
 
   # Browse to http://localhost:3000
 
 == Assumptions
 
-1. If a player lacks an entry for a particular statistic, such as hits, the value of that statistic is set to zero.
-2. If deriving a statistic requires division by zero, the value of that derived statistic is nil.
+1. If a player lacks an entry for a particular statistic,
+   such as hits, the value of that statistic is set to zero.
+2. If deriving a statistic requires division by zero,
+   the value of that derived statistic is nil.
 
 == TODO
 
@@ -21,6 +23,8 @@
 2. Add tests.
 
 == Statistics Formulas
+
+Source: Wikipedia
 
 AVG: batting_average
 HR: home_runs
