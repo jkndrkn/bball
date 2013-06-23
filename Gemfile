@@ -13,6 +13,7 @@ gem 'nokogiri'
 gem 'haml-rails'
 gem 'haml'
 gem 'andand'
+gem 'rails_12factor'
 
 gem 'capistrano', group: :development
 gem 'debugger', group: [:development, :test]
